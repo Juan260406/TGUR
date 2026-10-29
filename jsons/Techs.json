@@ -1,0 +1,875 @@
+[
+	{
+		"columnNumber": 0,
+		"era": "Prehistoric era",
+		"techCost": 16,
+		"buildingCost": 14,
+		"wonderCost": 31,
+		"techs": [
+			{
+				"name": "Foraging",
+				"row": 5,
+				"quote": "'A foraging wild creature, intent above all upon survival, is as strong as the grass.' - Richard Adams",
+				"uniques": ["Starting tech"]
+			}
+		]
+	},
+	{
+		"columnNumber": 1,
+		"era": "Prehistoric era",
+		"techCost": 26,
+		"buildingCost": 18,
+		"wonderCost": 41,
+		"techs": [
+			{
+				"name": "Agriculture",
+				"row": 3,
+				"prerequisites": ["Foraging"],
+				"quote": "'Where tillage begins, other arts follow. The farmers therefore are the founders of human civilization.' - Daniel Webster",
+				"uniques": ["[+1 Food] from every [City center]"]
+			},
+			{
+				"name": "Stone Tools",
+				"row": 7,
+				"prerequisites": ["Foraging"],
+				"quote": "'We shape our tools, and thereafter our tools shape us.' - Marshall McLuhan",
+				"uniques": ["[+1 Production] from every [City center]"]
+			}
+		]
+	},
+	{
+		"columnNumber": 2,
+		"era": "Ancient era",
+		"techCost": 42,
+		"buildingCost": 24,
+		"wonderCost": 55,
+		"techs": [
+			{
+				"name": "Sailing",
+				"row": 1,
+				"prerequisites": ["Agriculture"],
+				"quote": "'He who commands the sea has command of everything.' - Themistocles"
+			},
+			{
+				"name": "Pottery",
+				"row": 3,
+				"prerequisites": ["Agriculture"],
+				"quote": "'No man ever wetted clay and then left it, as if there would be bricks by chance and fortune.' - Plutarch"
+			},
+			{
+				"name": "Animal Husbandry",
+				"row": 5,
+				"prerequisites": ["Agriculture", "Stone Tools"],
+				"quote": "'We can judge the heart of a man by his treatment of animals.' - Immanuel Kant"
+			},
+			{
+				"name": "Archery", 
+				"row": 7,
+				"prerequisites": ["Stone Tools"],
+				"uniques": ["[+50]% weight to this choice for AI decisions <for [Macedonia] Civilizations> <hidden from users>"],
+				"quote": "'Listen to me you suitors... I will bring out the mighty bow of Ulysses, and whomsoever of you shall string it most easily and send his arrow through each one of twelve axes, him will I follow and quit this house of my lawful husband...' - Penelope"
+			},
+			{
+				"name": "Mining",
+				"row": 9,
+				"prerequisites": ["Stone Tools"],
+				"uniques": ["[+100]% weight to this choice for AI decisions <for [Macedonia] Civilizations> <hidden from users>"],
+				"quote": "'The meek shall inherit the Earth, but not its mineral rights.' - J. Paul Getty"
+			}
+
+		]
+	},
+	{
+		"columnNumber": 3,
+		"era": "Ancient era",
+		"techCost": 68,
+		"buildingCost": 32,
+		"wonderCost": 72,
+		"techs": [
+			{
+				"name": "Optics",
+				"row": 1,
+				"prerequisites": ["Sailing", "Pottery"],
+				"uniques": ["Enables embarkation for land units"],
+				"quote": "'Set your course by the stars, not by the lights of every passing ship.' - Omar Bradley"
+			},
+			{
+				"name": "Calendar",
+				"row": 3,
+				"prerequisites": ["Pottery", "Animal Husbandry"],
+				"quote": "'When the Pleiades, daughters of Atlas, are rising, begin your harvest, and your ploughing when they are going to set.' - Hesiod"
+			},
+			{
+				"name": "Writing",
+				"row": 2,
+				"prerequisites": ["Pottery"], 
+				"uniques": ["Enables establishment of embassies"],
+				"quote": "'Writing was not invented as a medium of publication, but for the practical needs of administrative corporations.' - Vere Gordon Childe"
+			},
+			{
+				"name": "Trapping",
+				"row": 5,
+				"prerequisites": ["Animal Husbandry"],
+				"quote": "'Until lions have their own historians, tales of the hunt will always glorify the hunter.' - West African proverb"
+			},
+			{
+				"name": "The Wheel",
+				"row": 7,
+				"prerequisites": ["Animal Husbandry", "Archery"],
+				"quote": "'His majesty went forth in a chariot of electrum, arrayed in his weapons of war, like Horus, the Smiter, lord of power...' - Tjaneni"
+			},
+			{
+				"name": "Masonry",
+				"row": 9,
+				"prerequisites": ["Mining"],
+				"quote": "'Who built Thebes of the seven gates? / In the books you will find the names of kings. / Did the kings haul up the lumps of rock?' - Bertolt Brecht"
+			},
+			{
+				"name": "Bronze Working",
+				"row": 10,
+				"prerequisites": ["Mining", "Archery"],
+				"uniques": ["[+200]% weight to this choice for AI decisions <for [Macedonia] Civilizations> <hidden from users>"],
+				"quote": "'Here Hector entered, with a spear eleven cubits long in his hand; the bronze point gleamed in front of him, and was fastened to the shaft of the spear by a ring of gold.' - Homer"
+			}
+		]
+	},
+	{
+		"columnNumber": 4,
+		"era": "Classical era",
+		"techCost": 110,
+		"buildingCost": 43,
+		"wonderCost": 96,
+		"techs": [
+			{
+				"name": "Fermentation",
+				"row": 3,
+				"prerequisites": ["Calendar"],
+				"uniques": ["[+1 Gold] from every [City center]"],
+				"quote": "'Enkidu ate the food until he was sated, he drank the beer - seven jugs! - and became expansive and sang with joy!' - Epic of Gilgamesh"
+			},
+			{
+				"name": "Spirituality",
+				"row": 2,
+				"prerequisites": ["Calendar", "Writing"],
+				"quote": "'Impotence of the exploited classes in their struggle against the exploiters just as inevitably gives rise to the belief in a better life after death as impotence of the savage in his battle with nature gives rise to belief in gods, devils, miracles, and the like.' - Vladimir Lenin"
+			},
+			{
+				"name": "Horseback Riding",
+				"row": 5,
+				"prerequisites": ["Trapping","The Wheel"],
+				"quote": "'It is easy to conquer the world on horseback. But to dismount and govern? That is the hardest task.' - Genghis Khan"
+			},
+			{
+				"name": "Mathematics",
+				"row": 7,
+				"prerequisites": ["The Wheel"],
+				"quote": "'Mathematics reveals its secrets only to those who approach it with pure love, for its own beauty.' - Archimedes"
+			},
+			{
+				"name": "Construction",
+				"row": 9,
+				"prerequisites": ["Masonry","The Wheel","Bronze Working"],
+				"quote": "'The architect should be equipped with knowledge of many branches of study and varied kinds of learning, for it is by his judgement that all work done by the other arts is put to the test.' - Vitruvius"
+			}
+		]
+	},
+	{
+		"columnNumber": 5,
+		"era": "Classical era",
+		"techCost": 177,
+		"buildingCost": 57,
+		"wonderCost": 127,
+		"techs": [
+			{
+				"name": "Shipbuilding",
+				"row": 1,
+				"prerequisites": ["Optics"],
+				"quote": "'Joyfully to the breeze royal Odysseus spread his sail, and with his rudder skillfully he steered.' - Homer"
+			},
+			{
+				"name": "Drama and Poetry",
+				"row": 3,
+				"prerequisites": ["Fermentation"],
+				"quote": "'Art is not a mirror held up to reality but a hammer with which to shape it.' - Bertolt Brecht"
+			},
+			{
+				"name": "Philosophy",
+				"row": 2,
+				"prerequisites": ["Spirituality","Fermentation"],
+				"quote": "'All men are intellectuals, but not all men have in society the function of intellectuals.' - Antonio Gramsci"
+			},
+			{
+				"name": "Imperial Games",
+				"row": 5,
+				"prerequisites": ["Horseback Riding","Fermentation","Construction","Mathematics"],
+				"uniques": ["Enables Open Borders agreements", "Comment [Enables relocating Capital City]"],
+				"quote": "'The People who once upon a time handed out military command, high civil office, legions — everything, now restrains itself and anxiously hopes for just two things: bread and circuses.' - Juvenal"
+			},
+			{
+				"name": "Currency",
+				"row": 7,
+				"prerequisites": ["Mathematics"],
+				"uniques": ["[+300]% weight to this choice for AI decisions <hidden from users>"],
+				"quote": "'Money is a new form of slavery. Distinguishable from the old simply by the fact that it is impersonal, that there is no human relation between master and slave.' - Leo Tolstoy"
+			},
+			{
+				"name": "Engineering",
+				"row": 8,
+				"prerequisites": ["Mathematics","Construction"],
+				"uniques": ["Roads connect tiles across rivers"],
+				"quote": "'One man's 'magic' is another man's engineering. 'Supernatural' is a null word.' - Robert Heinlein"
+			},
+			{
+				"name": "Iron Working",
+				"row": 10,
+				"prerequisites": ["Bronze Working"],
+				"quote": "'Do not wait to strike til the iron is hot, but make it hot by striking.' - William Butler Yeats"
+			}
+		]
+	},
+	{
+		"columnNumber": 6,
+		"era": "Medieval era",
+		"techCost": 287,
+		"buildingCost": 75,
+		"wonderCost": 168,
+		"techs": [
+			{
+				"name": "Compass",
+				"row": 1,
+				"uniques": ["[+1] Sight <for [All] units> <in [Water] tiles>"],
+				"prerequisites": ["Shipbuilding"],
+				"quote": "'I find the great thing in this world is not so much where we stand, as in what direction we are moving.' - Oliver Wendell Holmes"
+			},
+			{
+				"name": "Theology",
+				"row": 3,
+				"prerequisites": ["Philosophy", "Drama and Poetry","Imperial Games"],
+				"quote": "'Religion is regarded by the common people as true, by the wise as false, and by rulers as useful.' - Seneca"
+			},
+			{
+				"name": "Civil Service",
+				"row": 5,
+				"prerequisites": ["Currency","Imperial Games","Drama and Poetry","Philosophy","Engineering"],
+				"quote": "'The state is nothing but an instrument of oppression of one class by another - no less so in a democratic republic than in a monarchy.' - Friedrich Engels"
+			},
+			{
+				"name": "Guilds",
+				"row": 6,
+				"prerequisites": ["Currency","Engineering","Imperial Games"],
+				"uniques": ["[+1 Culture] from every [Artist]", "[+1 Gold] from every [Merchant]", "[+1 Science] from every [Scientist]", "[+1 Production] from every [Engineer]"],
+				"quote": "'The towns banded together for protection of life and industry, and thus developed the guild of the Middle Ages. Relieved from the fear of free-booting barons, no less dangerous than the hordes of organized robbers, these guilds grew populous and powerful.' - Helen Campbell"
+			},
+			{
+				"name": "Military Tactics",
+				"row": 8,
+				"prerequisites": ["Currency","Engineering","Iron Working"],
+				"uniques": ["Comment [+10% Strength to Military units adjacent to another Military unit]", "[{non-air} {Military}] units gain the [Formation I] promotion <hidden from users>"],
+				"quote": "'Tactics mean doing what you can with what you have.' - Saul Alinsky"
+			},
+			{
+				"name": "Metal Casting",
+				"row": 9,
+				"prerequisites": ["Engineering","Iron Working"],
+				"uniques": ["Improves movement speed on roads"],
+				"quote": "'When pieces of bronze or gold or iron break, the metal-smith welds them together again in the fire, and the bond is established.' - Sri Guru Granth Sahib"
+			}
+		]
+	},
+	{
+		"columnNumber": 7,
+		"era": "Medieval era",
+		"techCost": 465,
+		"buildingCost": 100,
+		"wonderCost": 223,
+		"techs": [
+			{
+				"name": "Education",
+				"row": 2,
+				"prerequisites": ["Compass","Theology","Civil Service"],
+				"uniques": ["Allied City-States provide [Science] equal to [50]% of what they produce for themselves"],
+				"quote": "'It is the mark of an educated mind to be able to entertain a thought without accepting it.' - Aristotle"
+			},
+			{
+				"name": "Distillation",
+				"row": 4,
+				"prerequisites": ["Theology","Guilds","Civil Service"],
+				"quote": "'For art to exist, for any sort of aesthetic activity or perception to exist, a certain physiological precondition is indispensable: intoxication'- Friedrich Nietzsche"
+			},
+			{
+				"name": "Chivalry",
+				"row": 6,
+				"prerequisites": ["Civil Service","Guilds","Military Tactics"],
+				"quote": "'Of noble knights and ladies, arms, and love, / Of chivalry, and noble deeds I sing...' - Ludovico Ariosto"
+			},
+			{
+				"name": "Machinery",
+				"row": 8,
+				"prerequisites": ["Guilds","Metal Casting","Military Tactics"],
+				"quote": "'Remember that people break down too, not just machinery.' - Gregory Benford"
+			},
+			{
+				"name": "Physics",
+				"row": 9,
+				"prerequisites": ["Guilds","Metal Casting","Military Tactics"],
+				"quote": "'Measure what is measurable, and make measurable what is not so.' - Galileo Galilei"
+			},
+			{
+				"name": "Steel",
+				"row": 10,
+				"prerequisites": ["Metal Casting","Military Tactics"], 
+				"quote": "'There never was a good knife made of bad steel.' - Benjamin Franklin"
+			}
+		]
+	},
+	{
+		"columnNumber": 8,
+		"era": "Renaissance era",
+		"techCost": 752,
+		"buildingCost": 132,
+		"wonderCost": 295,
+		"techs": [
+			{
+				"name": "Astronomy",
+				"row": 2,
+				"uniques": ["[+1] Movement <for [All] units> <in [Water] tiles>", "Enables [Embarked] units to enter ocean tiles"],
+				"prerequisites": ["Education"],
+				"quote": "'When the land is not enough, set sail. The ocean shall reveal more land.' - Dyah Gitarja"
+			},
+			{
+				"name": "Acoustics",
+				"row": 4,
+				"prerequisites": ["Education","Distillation"],
+				"quote": "'Music expresses that which cannot be put into words.' - Victor Hugo"
+			},
+			{
+				"name": "Mechanics",
+				"row": 5,
+				"prerequisites": ["Education","Distillation","Chivalry","Machinery"],
+				"quote": "'When you want to know how things really work, study them when they're coming apart.' - William Gibson"
+			},
+			{
+				"name": "Banking", 
+				"row": 6,
+				"prerequisites": ["Chivalry", "Machinery","Distillation"],
+				"quote": "'It is well enough that people of the nation do not understand our banking and monetary system, for if they did, I believe there would be a revolution before tomorrow morning.' - Henry Ford"
+			},
+			{
+				"name": "Printing Press",
+				"row": 8,
+				"prerequisites": ["Machinery","Physics","Chivalry"],
+				"quote": "'The press does many things and serves many functions but its major role, its irreducible responsibility, is to continually recreate a view of reality supportive of existing social and economic class power.' - Michael Parenti"
+			},
+			{
+				"name": "Gunpowder",
+				"row": 10,
+				"prerequisites": ["Physics","Steel","Machinery"],
+				"quote": "'Political power grows out of the barrel of a gun.' - Mao Zedong"
+			}
+		]
+	},
+	{
+		"columnNumber": 9,
+		"era": "Renaissance era",
+		"techCost": 1216,
+		"buildingCost": 175,
+		"wonderCost": 391,
+		"techs": [
+			{
+				"name": "Navigation",
+				"row": 2,
+				"prerequisites": ["Astronomy"],
+				"quote": "'A nation’s greatness is measured by its navy.' - Alfred Thayer Mahan"
+			},
+			{
+				"name": "Architecture",
+				"row": 4,
+				"prerequisites": ["Acoustics","Banking","Mechanics"],
+				"quote": "'Architecture is the will of an epoch translated into space.' - Ludwig Mies Van Der Rohe"
+			},
+			{
+				"name": "Economics",
+				"row": 5,
+				"prerequisites": ["Banking","Printing Press","Mechanics"],
+				"uniques": ["Enables conversion of city production to [Gold]"],
+				"quote": "'In studying economic history, we tend to systematically ignore the role of violence as well as the absolutely central role that war and slavery played in creating and shaping the basic institutions of what we now call 'the economy'.' - David Graeber"
+			},
+			{
+				"name": "Metallurgy",
+				"row": 7,
+				"prerequisites": ["Printing Press","Gunpowder","Banking"],
+				"quote": "'There are three things extremely hard: steel, a diamond, and to know one's self.' - Benjamin Franklin"
+			},
+			{
+				"name": "Siege Tactics",
+				"row": 8,
+				"prerequisites": ["Printing Press","Gunpowder"],
+				"uniques": ["[+15]% Strength <for [Gunpowder] units> <vs cities> <when attacking>", "[+15]% Strength for cities <when attacking>"],
+				"quote": "'The lowest is to attack a city. Siege of a city is only done as a last resort.' - Sun Tzu"
+			},
+			{
+				"name": "Chemistry",
+				"row": 10,
+				"prerequisites": ["Gunpowder"], 
+				"uniques": ["[+1 Science] from every [Strategic resource]", "[+2 Science] from every [Coral Reef]", "[+2 Science] from every [Kelp Forest]", "Enables conversion of city production to [Science]"],
+				"quote": "'In the natural sciences, and particularly in chemistry, generalities must come after the detailed knowledge of each fact and not before it.' - Joseph Louis Gay-Lussac"
+			}
+		]
+	},
+	{
+		"columnNumber": 10,
+		"era": "Industrial era",
+		"techCost": 1968,
+		"buildingCost": 232,
+		"wonderCost": 518,
+		"techs": [
+			{
+				"name": "Archaeology",
+				"row": 2,
+				"prerequisites": ["Navigation","Architecture"],
+				"quote": "'Those who cannot remember the past are condemned to repeat it.' - George Santayana"
+			},
+			{
+				"name": "Scientific Theory",
+				"row": 3,
+				"prerequisites": ["Architecture","Economics","Navigation","Chemistry"],
+				"uniques": ["Enables Research agreements"],
+				"quote": "'Claims that cannot be tested, assertions immune to disproof are veridically worthless, whatever value they may have in inspiring us or exciting our sense of wonder.' - Carl Sagan"
+			},
+			{
+				"name": "Urban Planning",
+				"row": 5,
+				"prerequisites": ["Architecture","Economics","Metallurgy"], 
+				"uniques": ["Comment [+10% Production when constructing pre-industrial buildings in all cities]",
+					    "[+10]% Production when constructing [Prehistoric era] buildings [in all cities] <hidden from users>",
+				            "[+10]% Production when constructing [Ancient era] buildings [in all cities] <hidden from users>",
+				            "[+10]% Production when constructing [Classical era] buildings [in all cities] <hidden from users>",
+				            "[+10]% Production when constructing [Medieval era] buildings [in all cities] <hidden from users>",
+				            "[+10]% Production when constructing [Renaissance era] buildings [in all cities] <hidden from users>"],
+				"quote": "'Any city, however small, is in fact divided into two. One the city of the poor, the other of the rich. These are at war with one another.' - Plato"
+			},
+			{
+				"name": "Industrialization",
+				"row": 6,
+				"prerequisites": ["Economics","Metallurgy","Architecture"],
+				"quote": "'...the more productive capital grows, the more it extends the division of labour and the application of machinery; the more the division of labour and the application of machinery extend, the more does competition extend among the workers, the more do their wages shrink together.' - Karl Marx"
+			},
+			{
+				"name": "Rifling",
+				"row": 7,
+				"prerequisites": ["Economics","Metallurgy","Siege Tactics"],
+				"uniques": ["Enables Defensive Pacts"],
+				"quote": "'Wars may be fought with weapons, but they are won by men. It is the spirit of the men who follow and of the man who leads that gains the victory.' - George S. Patton"
+			},
+			{
+				"name": "Military Science",
+				"row": 9,
+				"prerequisites": ["Metallurgy","Chemistry","Siege Tactics"],
+				"quote": "'If you know the enemy and know yourself, you need not fear the result of a hundred battles.' - Sun Tzu"
+			},
+			{
+				"name": "Fertilizer",
+				"row": 10,
+				"prerequisites": ["Chemistry"],
+				"quote": "'Remember to feed your people. Soldiers' bellies are not satisfied with empty promises and hopes.' - Peter the Great"
+			}
+		]
+	},
+	{
+		"columnNumber": 11,
+		"era": "Industrial era",
+		"techCost": 3184,
+		"buildingCost": 307,
+		"wonderCost": 686,
+		"techs": [
+			{
+				"name": "Biology",
+				"row": 2,
+				"prerequisites": ["Archaeology","Scientific Theory"],
+				"uniques": ["Comment [Military units heal +5 HP when healing with an additional +5 HP when adjacent to another Military unit]", "[{non-air} {Military}] units gain the [Medic] promotion <hidden from users>", "[+1 Food, +1 Gold] from every [City center]"],
+				"quote": "'If the brain were so simple we could understand it, we would be so simple we couldn't.' - Lyall Watson"
+			},
+			{
+				"name": "Electricity",
+				"row": 3,
+				"prerequisites": ["Scientific Theory","Industrialization","Urban Planning"],
+				"uniques": ["[+400]% weight to this choice for AI decisions <hidden from users>"],
+				"quote": "'Invention is the most important product of man's creative brain. The ultimate purpose is the complete mastery of mind over the material world, the harnessing of human nature to human needs.' - Nikola Tesla"
+			},
+			{
+				"name": "Refining",
+				"row": 5,
+				"prerequisites": ["Industrialization","Urban Planning","Rifling"],
+				"quote": "'By the fall of 1918, it was clear that a nation's prosperity, even its very survival, depended on securing a safe, abundant supply of cheap oil.' - Albert Marrin"
+			},
+			{
+				"name": "Steam Power",
+				"row": 6,
+				"prerequisites": ["Industrialization","Urban Planning","Rifling"],
+				"quote": "'In acquiring new productive forces men change their mode of production; and in changing their mode of production, in changing the way of earning their living, they change all their social relations. The hand-mill gives you society with the feudal lord; the steam-mill, society with the industrial capitalist.' - Karl Marx"
+			},
+			{
+				"name": "Dynamite",
+				"row": 9,
+				"uniques": ["[+1 Production] from every [Mountain]"],
+				"prerequisites": ["Fertilizer","Military Science"],
+				"quote": "'Increased knowledge clearly implies increased responsibility.' - Nicolaas Bloembergen"
+			}
+		]
+	},
+	{
+		"columnNumber": 12,
+		"era": "Modern era",
+		"techCost": 5152,
+		"buildingCost": 407,
+		"wonderCost": 909,
+		"techs": [
+			{
+				"name": "Refrigeration",
+				"row": 2,
+				"prerequisites": ["Biology", "Steam Power","Dynamite","Electricity","Refining"],
+				"quote": "'Why do some people have to be miserably poor in order that others can be extravagantly rich? I speak for all the children in the world who don't even have a piece of bread.' - Fidel Castro"
+			},
+			{
+				"name": "Radio",
+				"row": 3,
+				"prerequisites": ["Biology", "Steam Power","Dynamite","Electricity","Refining"],
+				"uniques": ["[+25]% spy effectiveness [in all cities]"],
+				"quote": "'The power of radio is not that it speaks to millions, but that it speaks intimately and privately to each one of those millions.' - Hallie Flanagan"
+			},
+			{
+				"name": "Financial Capital",
+				"row": 5,
+				"prerequisites": ["Biology", "Steam Power","Dynamite","Electricity","Refining"],
+				"uniques": [
+					"[+2 Gold] <for every [Amber]> <hidden from users>", "[+2 Gold] <for every [Beer]> <hidden from users>", "[+2 Gold] <for every [Citrus]> <hidden from users>", "[+2 Gold] <for every [Cocoa]> <hidden from users>", "[+2 Gold] <for every [Coffee]> <hidden from users>", "[+2 Gold] <for every [Cognac]> <hidden from users>",
+					"[+2 Gold] <for every [Copper]> <hidden from users>", "[+2 Gold] <for every [Cotton]> <hidden from users>", "[+2 Gold] <for every [Crab]> <hidden from users>", "[+2 Gold] <for every [Dyes]> <hidden from users>", "[+2 Gold] <for every [Furs]> <hidden from users>", "[+2 Gold] <for every [Gems]> <hidden from users>",
+					"[+2 Gold] <for every [Gold Ore]> <hidden from users>", "[+2 Gold] <for every [Incense]> <hidden from users>", "[+2 Gold] <for every [Ivory]> <hidden from users>", "[+2 Gold] <for every [Jewelry]> <hidden from users>", "[+2 Gold] <for every [Marble]> <hidden from users>", "[+2 Gold] <for every [Obsidian]> <hidden from users>",
+					"[+2 Gold] <for every [Olive]> <hidden from users>", "[+2 Gold] <for every [Pearls]> <hidden from users>", "[+2 Gold] <for every [Poppy]> <hidden from users>", "[+2 Gold] <for every [Porcelain]> <hidden from users>", "[+2 Gold] <for every [Rum]> <hidden from users>", "[+2 Gold] <for every [Salt]> <hidden from users>",
+					"[+2 Gold] <for every [Silk]> <hidden from users>", "[+2 Gold] <for every [Silver]> <hidden from users>", "[+2 Gold] <for every [Spices]> <hidden from users>", "[+2 Gold] <for every [Sugar]> <hidden from users>", "[+2 Gold] <for every [Tea]> <hidden from users>", "[+2 Gold] <for every [Tobacco]> <hidden from users>",
+					"[+2 Gold] <for every [Truffles]> <hidden from users>", "[+2 Gold] <for every [Vodka]> <hidden from users>", "[+2 Gold] <for every [Whales]> <hidden from users>", "[+2 Gold] <for every [Whisky]> <hidden from users>", "[+2 Gold] <for every [Wine]> <hidden from users>", "Comment [+2 [Gold] for every Luxury resource you own]",
+					"[Gold] cost of purchasing items in cities [-10]%"
+				],
+				"quote": "'Imperialism is the export of capital to the sources of raw materials, the frenzied struggle for monopolist possession of these sources, the struggle for a re-division of the already divided world, a struggle waged with particular fury by new financial groups and Powers seeking a 'place in the sun' against the old groups and Powers, which cling tenaciously to what they have seized.' - Joseph Stalin"
+			},
+			{
+				"name": "Replaceable Parts",
+				"row": 6,
+				"prerequisites": ["Biology", "Steam Power","Dynamite","Electricity","Refining"],
+				"uniques": ["[+2 Production] [in all cities]"],
+				"quote": "'Nothing is particularly hard if you divide it into small jobs.' - Henry Ford"
+			},
+			{
+				"name": "Flight", 
+				"row": 8,
+				"prerequisites": ["Biology", "Steam Power", "Electricity","Dynamite","Refining"],
+				"quote": "'Our own growing belief that man might nevertheless learn to fly was based on the idea that while thousands of the most dissimilar body structures, such as insects, fish, reptiles, birds and mammals, were flying every day at pleasure, it was reasonable to suppose that man might also fly.' - Wright Brothers"
+			},
+			{
+				"name": "Combustion",
+				"row": 9,
+				"prerequisites": ["Biology", "Steam Power","Dynamite","Electricity","Refining"],
+				"uniques": ["Religion naturally spreads to cities [+3] tiles away"],
+				"quote": "'In nature nothing is created, nothing is lost, everything is transformed.' - Antoine Lavoisier"
+			}
+		]
+	},
+	{
+		"columnNumber": 13,
+		"era": "Modern era",
+		"techCost": 8336,
+		"buildingCost": 539,
+		"wonderCost": 1204,
+		"techs": [
+			{
+				"name": "Plastics",
+				"row": 2,
+				"prerequisites": ["Radio","Replaceable Parts","Refrigeration","Financial Capital"],
+				"uniques": ["[+800]% weight to this choice for AI decisions <hidden from users>"],
+				"quote": "'Not only are plastics polluting our oceans and waterways and killing marine life – it’s in all of us and we can’t escape consuming plastics.' - Marco Lambertini"
+			},
+			{
+				"name": "Social Science",
+				"row": 3,
+				"prerequisites": ["Radio","Replaceable Parts","Refrigeration","Financial Capital"], 
+				"uniques": ["[+25]% Great Person generation [in all cities]", "[+10 Culture, +10 Science] <in cities with at least [4] [Specialists]>", "Comment [May start a Revolution when below -10 [Happiness]]", "[+400]% weight to this choice for AI decisions <hidden from users>"],
+				"quote": "'The philosophers have only interpreted the world, in various ways. The point, however, is to change it.' - Karl Marx"
+			},
+			{
+				"name": "Electronics",
+				"row": 5,
+				"prerequisites": ["Replaceable Parts", "Flight", "Radio","Financial Capital"],
+				"uniques": ["[+2 Science, +1 Gold] from every [Strategic resource]"],
+				"quote": "'We had better be quite sure that the purpose put into the machine is the purpose which we really desire.' - Norbert Wiener"
+			},
+			{
+				"name": "Cultural Hegemony",
+				"row": 6,
+				"prerequisites": ["Radio", "Financial Capital", "Flight", "Replaceable Parts"], 
+				"uniques": ["Influence of all other civilizations with all city-states degrades [25]% faster", "Each city founded increases culture cost of policies [25]% less than normal", "Each city founded increases Science cost of Technologies [25]% less than normal"],
+				"quote": "'Ideas and opinions are not spontaneously born in each individual brain: they have had a centre of formation, or irradiation, of dissemination, of persuasion - a group of men, or a single individual even, which has developed them and presented them in the political form of current reality.' - Antonio Gramsci"
+			},
+			{
+				"name": "Ballistics",
+				"row": 8,
+				"prerequisites": ["Flight", "Replaceable Parts"], 
+				"uniques": ["[+4 Science] <for every [[Military] Units]>"],
+				"quote": "'Just because you do not take an interest in politics doesn't mean politics won't take an interest in you.' - Pericles"
+			},
+			{
+				"name": "Combined Arms",
+				"row": 9,
+				"prerequisites": ["Combustion","Flight","Replaceable Parts"],
+				"quote": "'War is the continuation of politics by other means.' - Carl von Clausewitz"
+			}
+		]
+	},
+	{
+		"columnNumber": 14,
+		"era": "Atomic era",
+		"techCost": 13488,
+		"buildingCost": 713,
+		"wonderCost": 1595,
+		"techs": [
+			{
+				"name": "Pharmaceuticals",
+				"row": 2,
+				"prerequisites": ["Plastics","Social Science"], 
+				"uniques": ["[+4 Science, +1 Happiness] from every [Hospital]"],
+				"quote": "'In nothing do men more nearly approach the gods than in giving health to men.' - Cicero"
+			},
+			{
+				"name": "Ecology",
+				"row": 3,
+				"prerequisites": ["Plastics","Social Science"],
+				"uniques": ["[+3 Culture] from every [Natural Wonder]", "[+400]% weight to this choice for AI decisions <hidden from users>"],
+				"quote": "'The essence of capitalism is to turn nature into commodities and commodities into capital. The live green earth is transformed into dead gold bricks, with luxury items for the few and toxic slag heaps for the many. The glittering mansion overlooks a vast sprawl of shanty towns, wherein a desperate, demoralized humanity is kept in line with drugs, television, and armed force.' - Michael Parenti"
+			},
+			{
+				"name": "Atomic Theory",
+				"row": 5,
+				"prerequisites": ["Plastics","Electronics","Social Science","Cultural Hegemony"], 
+				"uniques": ["Comment [Resting points with City-States will raise by 5 times the Strength level of each of the nuclear devices in your possession]"],
+				"quote": "'I am become Death, the destroyer of worlds.' - J. Robert Oppenheimer"
+			},
+			{
+				"name": "Radar",
+				"row": 6,
+				"prerequisites": ["Ballistics","Electronics","Cultural Hegemony"],
+				"quote": "'To live effectively is to live with adequate information.' - Norbert Wiener" 
+			},
+			{
+				"name": "Information Theory",
+				"row": 8,
+				"prerequisites": ["Ballistics","Electronics","Cultural Hegemony","Combined Arms"],
+				"uniques": ["Production to [Gold] conversion in cities changed by [+100]%", "Production to [Science] conversion in cities changed by [+100]%"],
+				"quote": "'An individual tends to absorb the surrounding spirit and to radiate the acquired lifestyle and worldview to anyone around, not just to a select friend.' - Andrej Kolmogorov"
+			},
+			{
+				"name": "Advanced Espionage",
+				"row": 9,
+				"prerequisites": ["Combined Arms", "Ballistics", "Electronics","Cultural Hegemony"],
+				"uniques": ["[+25]% spy effectiveness [in all cities]", "[-25]% enemy spy effectiveness [in all cities]"],
+				"quote": "'One spy in the right place is worth twenty thousand men in the field.' - Napoleon Bonaparte"
+			}
+			
+		]
+	},
+	{
+		"columnNumber": 15,
+		"era": "Atomic era",
+		"techCost": 21824,
+		"buildingCost": 945,
+		"wonderCost": 2113,
+		"techs": [
+			{
+				"name": "Advanced Urbanism",
+				"row": 2,
+				"prerequisites": ["Pharmaceuticals","Ecology"],
+				"uniques": ["[+4 Science, +1 Culture] from every [Wonder]", "[Gold] cost of purchasing [All] buildings [-15]%"],
+				"quote": "'The mark of a great city isn’t how it treats its special places – everybody does that right – but how it treats its ordinary ones.' - Aaron M. Renn"
+			},
+			{
+				"name": "Environmentalism",
+				"row": 3,
+				"prerequisites": ["Atomic Theory","Pharmaceuticals","Ecology"], 
+				"uniques": ["[+400]% weight to this choice for AI decisions <hidden from users>"],
+				"quote": "'Environmentalism without class struggle is gardening.' - Chico Mendes"
+			},
+			{
+				"name": "Nuclear Fission",
+				"row": 5,
+				"prerequisites": ["Atomic Theory","Radar"],
+				"quote": "'Our country and all the other socialist countries want peace; so do the peoples of all the countries of the world. The only ones who crave war and do not want peace are certain monopoly capitalist groups in a handful of imperialist countries which depend on aggression for their profits.' - Mao Zedong"
+			},
+			{
+				"name": "Rocketry",
+				"row": 6,
+				"prerequisites": ["Radar","Advanced Espionage","Information Theory"],
+				"quote": "'Every gun that is made, every warship launched, every rocket fired, signifies in the final sense a theft from those who hunger and are not fed, those who are cold and are not clothed.' - Dwight D. Eisenhower"
+			},
+			{
+				"name": "Cybernetics",
+				"row": 8,
+				"prerequisites": ["Radar","Advanced Espionage","Information Theory"],
+				"uniques": ["[+1 Science] from every specialist [in all cities]", "[+25]% Yield from every [Great Improvement]"],
+				"quote": "'We should be on our guard not to overestimate science and scientific methods when it is a question of human problems; and we should not assume that experts are the only ones who have a right to express themselves on questions affecting the organization of society.' - Albert Einstein"
+			},
+			{
+				"name": "Computers",
+				"row": 9,
+				"prerequisites": ["Advanced Espionage","Radar","Information Theory"],
+				"quote": "'A computer can never be held accountable, therefore a computer must never make a management decision.' - caution from a 1979 IBM presentation"
+			}
+		]
+	},
+	{
+		"columnNumber": 16,
+		"era": "Information era",
+		"techCost": 35311,
+		"buildingCost": 1252,
+		"wonderCost": 2800,
+		"techs": [
+			{
+				"name": "Telecommunications",
+				"row": 2,
+				"prerequisites": ["Computers", "Advanced Urbanism"],
+				"uniques": ["[+6 Happiness] <for every [Completed Policy branches]>"],
+				"quote": "'The ruling ideas of each age have ever been the ideas of its ruling class. When people speak of the ideas that revolutionise society, they do but express that fact that within the old society the elements of a new one have been created, and that the dissolution of the old ideas keeps even pace with the dissolution of the old conditions of existence.' - Karl Marx & Friedrich Engels"
+			},
+			{
+				"name": "Mobile Tactics",
+				"row": 3,
+				"prerequisites": ["Nuclear Fission", "Environmentalism", "Advanced Urbanism"],
+				"uniques": ["[+20]% to Flank Attack bonuses <for [Military] units>"],
+				"quote": "'We must come to the inevitable conclusion that the guerrilla fighter is a social reformer, that he takes up arms responding to the angry protest of the people against their oppressors, and that he fights in order to change the social system that keeps all his unarmed brothers in ignominy and misery.' - Ernesto Guevara"
+			},
+			{
+				"name": "Advanced Ballistics",
+				"row": 5,
+				"prerequisites": ["Nuclear Fission","Rocketry"],
+				"uniques": ["[+25]% spy effectiveness [in all cities]"],
+				"quote": "'The nuclear arms race is like two sworn enemies standing waist deep in gasoline, one with three matches, the other with five.' – Carl Sagan"
+			},
+			{
+				"name": "Satellites",
+				"row": 6,
+				"prerequisites": ["Rocketry","Computers","Cybernetics"],
+				"uniques": ["[+30 Science] <for every [Researched [Information era] Technologies]>"],
+				"quote": "'Looking at the earth from afar you realize it is too small for conflict and just big enough for co-operation.' - Yuri Gagarin"
+			},
+			{
+				"name": "Robotics",
+				"row": 8,
+				"prerequisites": ["Rocketry","Computers","Cybernetics"],
+				"quote": "'1. A robot may not injure a human being or, through inaction, allow a human being to come to harm. 2. A robot must obey any orders given to it by human beings, except when such orders would conflict with the First Law. 3. A robot must protect its own existence as long as such protection does not conflict with the First or Second Law.' - Isaac Asimov"
+			},
+			{
+				"name": "Lasers",
+				"row": 9,
+				"prerequisites": ["Computers","Cybernetics"],
+				"quote": "'A laser is a weak source of energy... But with a laser, you can drill a hole in a diamond or wipe out cancer.' - Al Ries"
+			}
+		]
+	},
+
+	{
+		"columnNumber": 17,
+		"era": "Information era",
+		"techCost": 57136,
+		"buildingCost": 1659,
+		"wonderCost": 3709,
+		"techs": [
+			{
+				"name": "Globalization",
+				"row": 2,
+				"prerequisites": ["Telecommunications","Mobile Tactics","Advanced Ballistics"],
+				"uniques": ["Gifts of Gold to City-States generate [25]% more Influence", "[+5]% [Gold] [in all cities] <for every [Remaining [Major] Civilizations]>", "[+2 Gold] from every [Merchant]"],
+				"quote": "'Designed to leave the world's economic destiny at the mercy of bankers and multinational corporations, Globalization is a logical extension of imperialism, a victory of empire over republic, international finance capital over democracy.' - Michael Parenti"
+			},
+			{
+				"name": "Particle Physics",
+				"row": 4,
+				"prerequisites": ["Telecommunications","Mobile Tactics","Advanced Ballistics"],
+				"uniques": ["[+2 Science] from every [Scientist]"],
+				"quote": "'If you think you understand quantum mechanics, you don’t understand quantum mechanics.' - Richard Feynman"
+			},
+			{
+				"name": "Nanotechnology",
+				"row": 8,
+				"prerequisites": ["Robotics", "Satellites", "Lasers"],
+				"uniques": ["[+2 Production] from every [Engineer]"],
+				"quote": "'Nanotechnology is the idea that we can create devices and machines all the way down to the nanometer scale, which is a billionth of a meter, about half the width of a human DNA molecule.' - Paul McEuen"
+			},
+			{
+				"name": "Stealth",
+				"row": 6,
+				"prerequisites": ["Robotics", "Lasers", "Advanced Ballistics", "Satellites"],
+				"uniques": ["[+2 Culture] from every [Artist]"],
+				"quote": "'Keep the enemy in the dark about where and when our forces will attack.' - Mao Zedong"
+			}
+		]
+	},
+	{
+		"columnNumber": 18,
+		"era": "Future era",
+		"techCost": 92447,
+		"buildingCost": 2197,
+		"wonderCost": 4913,
+		"techs": [
+			{
+				"name": "Nuclear Fusion",
+				"row": 7,
+				"prerequisites": ["Particle Physics","Nanotechnology", "Stealth", "Globalization"],
+				"uniques": ["[+25]% spy effectiveness [in all cities]"],
+				"quote": "'I would like nuclear fusion to become a practical power source. It would provide an inexhaustible supply of energy, without pollution or global warming.' - Stephen Hawking"
+			},
+			{
+				"name": "Advanced AI",
+				"row": 3,
+				"prerequisites": ["Particle Physics","Nanotechnology", "Stealth", "Globalization"],
+				"uniques": ["[-15]% maintenance cost for [all] buildings [in all cities]"],
+				"quote": "'By far the greatest danger of Artificial Intelligence is that people conclude too early that they understand it.' - Eliezer Yudkowsky"
+			},
+		]
+	},
+	{
+		"columnNumber": 19,
+		"era": "Future era",
+		"techCost": 149584,
+		"buildingCost": 2911,
+		"wonderCost": 6508,
+		"techs": [
+			{
+				"name": "Future Tech",
+				"row": 5,
+				"prerequisites": ["Nuclear Fusion", "Advanced AI"],
+				"uniques": ["Can be continually researched", "Instantly provides [1] [Future discovery] <hidden from users>", "Comment [Gain a cumulative +5% to all city Stats]", "Comment [Gain instantly +20 [Pollution] (modified by game speed)]",
+					"Instantly provides [5] [Pollution] <on [Turbo] game speed> <hidden from users>",
+				"Instantly provides [10] [Pollution] <on [Online] game speed> <hidden from users>",
+				"Instantly provides [15] [Pollution] <on [Quick] game speed> <hidden from users>",
+				"Instantly provides [20] [Pollution] <on [Standard] game speed> <hidden from users>",
+				"Instantly provides [30] [Pollution] <on [Epic] game speed> <hidden from users>",
+				"Instantly provides [40] [Pollution] <on [Marathon] game speed> <hidden from users>",
+				"Instantly provides [50] [Pollution] <on [Endless] game speed> <hidden from users>",],
+				"quote": "'Any sufficiently advanced technology is indistinguishable from magic.' - Arthur C. Clarke",
+                "civilopediaText": [{"text": "Who knows what the future holds?"}]
+			}
+		]
+	}
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
